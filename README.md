@@ -105,7 +105,12 @@ flowchart LR
 ```bash
 source ~/drone_ws/env_px4.sh
 ```
+Which is basically followings:
 
+```bash
+export ROS_DOMAIN_ID=0
+unset ROS_LOCALHOST_ONLY
+```
 ---
 
 ### 2. Start Micro XRCE-DDS Agent
@@ -267,10 +272,3 @@ Planned extensions for this project:
 ## 🏁 Summary
 
 This project demonstrates a complete pipeline for **drone autonomy using ROS2 and PX4**, with a strong focus on modularity, configurability, and real-world robotics architecture. It serves as a foundation for more advanced capabilities such as perception-driven navigation and intelligent mission control.
-
----
-
-If you want, next I can:
-
-* generate a **clean PNG architecture diagram for your repo**
-* or help you add a **demo GIF/video section**, which boosts portfolio impact a lot 🚀
